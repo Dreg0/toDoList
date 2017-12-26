@@ -1,0 +1,194 @@
+body,
+input,
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #edf0f1;
+}
+
+.toDo-list{
+background: #edf0f1;
+padding: 80px 0 0 0  ;
+   
+}
+
+
+.header-toDo {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    padding:15px;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background: #25b99a;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15);
+}
+
+.header-toDo-input {
+    padding-left: 10px;
+    width: 100%;
+    height: 50px;
+    float: left;
+    color: #fff;
+    padding:0 70px 0 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px 25px 25px 5px;
+    border: 0px;
+    box-shadow: none;
+    outline: none;
+    font-size: 15px;
+    text-indent: 15px;
+}
+
+.header-toDo-input::placeholder {
+    color: rgba(255, 255, 255, 0.75)
+}
+
+.header-toDo-button{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    position: absolute;
+    top:15px;
+    right:15px;
+    border:0;
+    z-index: 2;
+    background:#fff;
+    cursor: pointer;
+}
+
+.header-toDo-button svg{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin:-8px 0 0 -8px;
+}
+
+.header-toDo-button svg .fill{
+ fill:#25b99a;
+}
+
+.toDo-tasks{
+    width: 100%;
+    float: left;
+    padding: 15px;
+
+}
+
+.toDo-list-tasks{
+    width: 100%;
+    float: left;
+    text-indent: 15px
+}
+
+.toDo-list-tasks-items{
+    position: relative;
+    font-size: 14px;
+    color: #444;
+    line-height: 22px;
+    width: 100%;
+    float: left;
+    min-height: 50px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px rgba(44, 62, 80, 0.10);
+    margin-bottom: 10px;
+    padding: 14px 100px 14px 0;
+
+}
+
+.toDo-list-tasks li:first-of-type{
+    margin-top: -5px;
+}
+
+.toDo-list-tasks li:last-of-type{
+    margin-bottom: 0;
+}
+
+
+.toDo-list-tasks-buttonS{
+  
+    width: 100px;
+    height: 50px;
+    position:absolute;
+    top:0;
+    right:0;
+
+}
+
+.toDo-list-tasks-button{
+    width: 50px;
+    height: 50px;
+    float: left;
+    background: none;
+    border:0px;
+    box-shadow: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+
+}
+
+/* SVG  icons buttons */
+.noFill{
+    fill:none;
+}
+
+.toDo-list-tasks-buttonS button:last-of-type:before{
+    content: '';
+    width: 1px;
+    height: 30px;
+    background: #edf0f1;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.toDo-list-tasks-button svg{
+   width: 22px;
+   height: 22px;
+   position: absolute;
+   top: 50%;
+   left:50%;
+   margin: -11px 0 0 -11px;
+}
+
+.remove-task svg .fill{
+fill:#c0cecb;
+transition: 0.5s ease;
+}
+
+.remove-task:hover svg .fill{
+    fill:#e85656;
+}
+
+.complete-task svg{
+    border-radius: 11px;
+    border:1.1px solid #25b99a;
+    transition: 0.5s ease;
+}
+
+.complete-task .fill{
+    fill:#25b99a;
+
+}
+
+#completed-tasks .complete-task svg{
+ background: #25b99a;
+ border:0;
+}
+
+:not(#completed-tasks) .complete-task:hover svg{
+background:rgba(37,185,154,0.5); 
+}
+
+:not(#completed-tasks) .complete-task:hover svg .fill{
+  fill:#fff; 
+    }
+
+#completed-tasks .complete-task svg .fill{
+    fill:#fff;
+}
