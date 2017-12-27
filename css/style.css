@@ -192,3 +192,36 @@ background:rgba(37,185,154,0.5);
 #completed-tasks .complete-task svg .fill{
     fill:#fff;
 }
+
+#completed-tasks{
+    /* opacity: 0.5; */
+    padding: 60px 0 0 0;
+    position: relative;
+}
+#completed-tasks:before{
+    content:'';
+    width: 150px;
+    height: 1px;
+    background: #94a09b;
+    position: absolute;
+    top:30px;
+    left:50%;
+    margin: 0 0 0 -75px;
+}
+
+#completed-tasks:empty:after{
+    content: 'You have nothing to-do.';
+    margin:15px 0 0 0;
+}
+
+#todo:empty:empty:after{
+    content:'You have yet to complete any tasks.';
+}
+
+.toDo-list-tasks:after{
+ width: 100%;
+ display: block;
+ text-align: center;
+ font-size: 12px;
+ color:#aaa;
+}
